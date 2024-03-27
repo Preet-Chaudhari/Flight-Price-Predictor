@@ -1,0 +1,98 @@
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.sublabel {
+    color: gray;
+    margin: 4px;
+    font-size: 11px;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0050A0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.65);
+    pointer-events: none;
+    line-height: 1.5;
+    padding: 10px 0.5rem 0 0.5rem;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:not([value=""]):before {
+    display: none;
+}
+
+.custom-bg {
+    background-color: #F7F7F9;
+}
+
+input[type="text"] {
+   border: 0;
+   outline: none;
+   padding: 1.0rem;
+}
+
+input[name="origin"] {
+   text-indent: 3.2rem;
+   border-radius: 5px 0 0 5px;
+   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5186 13.6768L25.9581 11.9514C26.6413 11.7683 27.3691 11.8642 27.9816 12.2178C28.5941 12.5714 29.0411 13.1538 29.2241 13.837C29.4072 14.5201 29.3113 15.248 28.9577 15.8605C28.6041 16.473 28.0216 16.9199 27.3385 17.103L8.01997 22.2794L2.08571 15.5872L5.94942 14.552L9.2154 16.4376L13.0791 15.4023L8.08766 7.07717L11.9514 6.04189L19.5186 13.6768Z' stroke='%23080A2B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4 28H28' stroke='%23080A2B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+   background-repeat: no-repeat;
+   background-position: 30px 15px;
+}
+
+input[name="depart"] {
+   border-radius: 0 5px 5px 0;
+   text-indent: 2.2rem;
+   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.2088 15.7474L26.6483 17.4728C27.3314 17.6559 27.9139 18.1028 28.2675 18.7153C28.6211 19.3278 28.717 20.0557 28.5339 20.7388C28.3509 21.422 27.9039 22.0044 27.2914 22.358C26.6789 22.7117 25.9511 22.8075 25.2679 22.6244L5.9494 17.4481L4.15625 8.68537L8.01996 9.72065L9.90557 12.9866L13.7693 14.0219L13.6091 4.31642L17.4728 5.35169L20.2088 15.7474Z' stroke='%23080A2B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4 28H28' stroke='%23080A2B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+   background-repeat: no-repeat;
+   background-position: 10px 15px;
+}
+
+input[name="to"]::placeholder {
+   font-weight: 700;
+   font-size: 1.125rem;
+   color: hsl(236, 8%, 62%);
+}
+
+input[name="from"]::placeholder {
+   font-weight: 700;
+   font-size: 1.125rem;
+   /*color: var(--clr-neutral-900);*/
+}
+
+#predict-card {
+    margin-top: 25px;
+    /*transition: opacity 0.6s linear;*/
+}
